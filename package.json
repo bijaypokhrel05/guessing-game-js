@@ -1,7 +1,7 @@
 {
   "name": "guessing-game",
   "version": "1.0.0",
-  "description": "",
+  "description": "The Guessing Game Project is a two-part project. The game is simple. The user guesses a number between 1-100. The app should respond and indicate if their guess is 'hot' or 'cold' based on how close the guess is to the number they are trying to guess. The game should also keep track of previous guesses, and give the user a way to reset the game or get a hint.",
   "main": "index.js",
   "scripts": {
     "test": "testem"
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/FullstackAcademy/guessing-game#readme",
   "devDependencies": {
-    "testem": "^2.14.0"
-  }
+    "testem": "^2.17.0"
+  },
+  "keywords": []
 }
