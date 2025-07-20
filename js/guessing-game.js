@@ -89,8 +89,53 @@ class Game {
 
 };
 
-let newGame = () => {
+function newGame() {
     return new Game();
 }
+
+let game = newGame();
+
+const input = document.querySelector('#input');
+const clickBtn = document.querySelector('#click');
+const remarks = document.querySelector('.remarks');
+const restart = document.querySelector('#restart');
+const hintBtn = document.querySelector('.hint');
+const hintText = document.querySelector('.guess');
+
+
+let guessNum = 0;
+input.addEventListener('input', (el) => {
+    guessNum = parseInt(el.target.value);
+})
+clickBtn.addEventListener('click', (el) => {
+    let val = game.playersGuessSubmission(guessNum);
+    remarks.innerText = val;
+})
+
+
+restart.addEventListener('click', (el) => {
+    game = new Game();
+    remarks.innerText = '';
+    input.value = '';
+    remarks.innerText = 'Guess a number between 1 - 100';
+    hintText.innerHTML = '<text id = "hint-text">Hint available after 4 guesses.</text>';
+    console.log('restarting the game!');
+})
+
+hintBtn.addEventListener('click', (el) => {
+    let hintArray;
+    if (game.pastGuesses.length === 4) {
+        hintText.innerHTML = `<text id="hint1">h1</text> <text id="hint2">h2</text> <text id ="hint3">h3</text>`;
+        hintArray = game.provideHint();
+        document.querySelector('#hint1').innerText = hintArray[0];
+        document.querySelector('#hint2').innerText = hintArray[1];
+        document.querySelector('#hint3').innerText = hintArray[2];
+    } else {
+        console.log('The hint works only after the fourth guesses!');
+    }
+
+    console.log(hint1, hint2, hint3);
+})
+
 
 

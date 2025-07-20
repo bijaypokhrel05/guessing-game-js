@@ -4,13 +4,27 @@
   <head>
     <meta charset="UTF-8">
     <title>Guessing Game</title>
+    <title>Guessing Game</title>
     <link rel="stylesheet" href="main.css">
     <!-- the MAIN.CSS file is linked here -->
+     <script src = 'js/guessing-game.js' defer></script>
+     
   </head>
 
   <body>
-
-
+    <div class="main">
+    <h1 id="heading1">Guessing Game</h1>
+    <h2 id = "heading2">Let's guess it!</h2>
+    <input id="input" type="number" placeholder="Enter a number"> 
+    <div class="text"><text class="remarks">Guess a number between 1 - 100</text></div>
+    <div class = 'button1'><button id = 'click'>Submit Guess</button></div>
+    <div class="hint-div">
+      <button class="hint">Show Hint!</button><br>
+      <!-- <text id="hint1">h1</text> <text id="hint2">h2</text> <text id ='hint3'>h3</text> -->
+      <div class="guess"><text id = "hint-text">Hint available after 4 guesses.</text></div>
+    </div>
+    <div class = 'button2'><button id = "restart">Restart</button></div>
+    </div>
 
 
 

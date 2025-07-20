@@ -1,1 +1,100 @@
 /* Write your CSS code in this file */
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #231942;
+}
+
+.main {
+    margin: 80px;
+    background-color: #5E548E;
+    border-radius: 30px;
+    padding: 35px 30px;
+    color: #E0B1CB;
+    box-shadow: 5px 10px 20px rgb(17, 17, 17);
+
+}
+
+#heading1,
+#heading2 {
+    margin: 9px 3px;
+}
+
+#input {
+    border-radius: 50px;
+    border-color: navajowhite;
+    border: none;
+    width: 150px;
+    height: 20px;
+    padding: 2px 10px;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.15);
+}
+
+.text {
+    margin: 1rem;
+    font-size: 17px;
+    color: #E0B1CB;
+}
+
+.button1,
+.button2 {
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+#click, #restart {
+    border-radius: 50px;
+    border: none;
+    background-color: #231942;
+    color: #E0B1CB;
+    font-weight: bold;
+    padding: 15px 15px;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hint-div {
+    height: 110px; 
+    width: 350px;
+    background-color: #9F86C0;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+
+}
+.hint-text {
+    color: #E0B1CB;
+}
+.hint {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    background-color: #231942;
+    color: #E0B1CB;
+    padding: 10px 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.15);
+}
+
+#hint1, #hint2, #hint3 {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background-color: #231942;
+    margin: 31px;
+    padding: 15px 15px;
+    border-radius: 50%;
+    justify-content: center;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.15);
+    gap: 20px;
+}
+
+#hint {
+    border: 2px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    color: #E0B1CB;
+    padding: 2px 20px;
+}
